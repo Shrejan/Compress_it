@@ -1,0 +1,69 @@
+.body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width:100vw;
+    background-image: url(pexels-pixelcop-2680270.jpg);
+    background-size:auto;
+    
+}
+.outer_box{
+    height: 20dvw;
+    width: 35vi;
+    padding: 10px;
+    
+    border: 2px dashed black;
+}
+@media(max-width:736px){
+    .outer_box{
+        height: 35dvw;
+    width: 49vi;
+    margin-bottom: 20vi;
+    }
+    }
+.inner_box{
+    height: 20dvw;
+    width: 30vi;
+    color: black;
+    text-wrap:wrap;
+    border: 1px solid black;
+}    
+@media(max-width:736px){
+    .inner_box{
+        height: 30dvw;
+    width: 44vi;
+    
+    }
+    }
+ .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }   
+ input[type="file"]{
+    display: none;
+    height:20px ;
+ }
+ .download_section{
+    height: 20px;
+    width: auto;
+    padding: 5px;
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: brown;
+    position:absolute;
+    margin-top: 40vi;
+ }
+ .download_button{
+    text-decoration: none;
+    color: black;
+ }
+ @media(min-width:970px){
+    .outer_box{  
+    margin-bottom: 8vi;
+    }
+    .download_section{
+        margin-top: 30vi;
+    }
+    }

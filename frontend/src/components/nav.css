@@ -1,0 +1,17 @@
+
+.navbar {
+    
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    
+    padding: 10px 20px;
+    background-color: #62675e;
+    color: black;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+ 
