@@ -5,7 +5,7 @@ import image_rendering from "./compression.js";
 import quality_enhancer from "./increaser.js";
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: 'https://compress-it-psi.vercel.app/' }));
 app.use(express.json());
 const port = 3000;
 
