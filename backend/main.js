@@ -7,7 +7,7 @@ import quality_enhancer from "./increaser.js";
 const app = express();
 app.use(cors({ origin: 'https://compress-it-psi.vercel.app/' }));
 app.use(express.json());
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const upload = multer({
   dest: "uploads/",
@@ -32,5 +32,5 @@ app.post("/img_dcomp",upload.single("img"), async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server listening on https://compress-it-backend.vercel.app:${port}`);
+  console.log(`Server running on port:${port}`);
 });
