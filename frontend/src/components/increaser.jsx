@@ -12,7 +12,7 @@ const Increaser = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/stand_img",
+        "https://compress-it-backend.vercel.app/img_dcomp",
         formdata
       );
       try {
