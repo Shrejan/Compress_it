@@ -13,7 +13,7 @@ const Compresser = () => {
 
     try {
       const response = await axios.post(
-        "https://compress-it-backend.vercel.app/img_compress",
+        "https://compress-it-kmoj.vercel.app/",
         formdata
       );
       try {

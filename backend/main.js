@@ -5,9 +5,9 @@ import image_rendering from "./compression.js";
 import quality_enhancer from "./increaser.js";
 
 const app = express();
-app.use(cors({ origin: 'https://compress-it-psi.vercel.app/' }));
+app.use(cors({ origin: 'https://compress-it-kmoj.vercel.app/' }));
 app.use(express.json());
-const port = process.env.PORT || 3000;
+const port =  3000;
 
 const upload = multer({
   dest: "uploads/",
@@ -21,6 +21,7 @@ app.post("/img_compress", upload.single("img"), async (req, res) => {
     let Compressedimg = await image_rendering(Cimage);
     const base64 = Compressedimg.toString("base64");
     res.status(200).json({ base64 });
+    res.send("hello")
 });
 app.post("/img_dcomp",upload.single("img"), async (req, res) => { 
   const Iimage = req.file;
